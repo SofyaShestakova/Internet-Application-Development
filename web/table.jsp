@@ -102,14 +102,8 @@
 
     <%
         ArrayList<String> list = (ArrayList<String>)request.getAttribute("prevRequests");
-        float x[];
-        float y[];
-        float r[];
-        int count = 0;
-        float i;
         for(String prevRequest : list) {
             out.println("<tr>");
-            i=0;
             for(String attribute : prevRequest.split(" ")) {
                 out.println("<td class='answer-item'>");
                 out.println(attribute);
@@ -119,6 +113,7 @@
         }
     %>
 </table>
+
 
 <!--<p><a href="lab2_war">Вернуться</a></p>-->
 

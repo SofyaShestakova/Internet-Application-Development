@@ -32,6 +32,7 @@ public class AreaCheckServlet extends HttpServlet {
             x = Double.parseDouble(request.getParameter("X"));
             y = Double.parseDouble(request.getParameter("Y"));
             r = Double.parseDouble(request.getParameter("R"));
+
         } catch (Exception e) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/bad_request.jsp");
             dispatcher.forward(request, response);
